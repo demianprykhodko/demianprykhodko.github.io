@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.801d6404.css",
-    "main.js": "/static/js/main.e9bc2eb1.js",
-    "static/media/routeplanner.png": "/static/media/routeplanner.f584cbcaaa63c38ad76b.png",
-    "static/media/CV2023.pdf": "/static/media/CV2023.31285654d2e96fd39bce.pdf",
-    "static/media/CallingCode-Regular.ttf": "/static/media/CallingCode-Regular.0bbb9410d698987fb4c5.ttf",
-    "static/media/PublicSans-Regular.ttf": "/static/media/PublicSans-Regular.f2154246b7329c88d7af.ttf",
-    "static/media/CallingCode-Regular.otf": "/static/media/CallingCode-Regular.dfdcf6beb52d8309d87d.otf",
-    "static/media/Fontspring-DEMO-neueradial-a-black.otf": "/static/media/Fontspring-DEMO-neueradial-a-black.b98d521b8e441abb6152.otf",
-    "static/media/photo.jpeg": "/static/media/photo.5c802c33a0a8fe13989c.jpeg",
-    "static/media/Dp..svg": "/static/media/Dp..724e15174846156ce1c4a6d77b61a9f8.svg",
-    "index.html": "/index.html",
-    "main.801d6404.css.map": "/static/css/main.801d6404.css.map",
-    "main.e9bc2eb1.js.map": "/static/js/main.e9bc2eb1.js.map"
+    "main.css": "/portfolio/static/css/main.7f621624.css",
+    "main.js": "/portfolio/static/js/main.4c2cb202.js",
+    "static/media/routeplanner.png": "/portfolio/static/media/routeplanner.f584cbcaaa63c38ad76b.png",
+    "static/media/CV2023.pdf": "/portfolio/static/media/CV2023.31285654d2e96fd39bce.pdf",
+    "static/media/CallingCode-Regular.ttf": "/portfolio/static/media/CallingCode-Regular.0bbb9410d698987fb4c5.ttf",
+    "static/media/PublicSans-Regular.ttf": "/portfolio/static/media/PublicSans-Regular.f2154246b7329c88d7af.ttf",
+    "static/media/CallingCode-Regular.otf": "/portfolio/static/media/CallingCode-Regular.dfdcf6beb52d8309d87d.otf",
+    "static/media/Fontspring-DEMO-neueradial-a-black.otf": "/portfolio/static/media/Fontspring-DEMO-neueradial-a-black.b98d521b8e441abb6152.otf",
+    "static/media/photo.jpeg": "/portfolio/static/media/photo.5c802c33a0a8fe13989c.jpeg",
+    "static/media/Dp..svg": "/portfolio/static/media/Dp..724e15174846156ce1c4a6d77b61a9f8.svg",
+    "index.html": "/portfolio/index.html",
+    "main.7f621624.css.map": "/portfolio/static/css/main.7f621624.css.map",
+    "main.4c2cb202.js.map": "/portfolio/static/js/main.4c2cb202.js.map"
   },
   "entrypoints": [
-    "static/css/main.801d6404.css",
-    "static/js/main.e9bc2eb1.js"
+    "static/css/main.7f621624.css",
+    "static/js/main.4c2cb202.js"
   ]
 }

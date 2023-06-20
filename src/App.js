@@ -1,4 +1,5 @@
 import "./style.css";
+import "./reset.css";
 import Header from "./layouts/Header";
 import MainSection from "./layouts/Main";
 import SidebarLeft from "./layouts/SidebarLeft";
@@ -14,11 +15,13 @@ const App = () => {
       <Header />
       <SidebarLeft />
       <SidebarRight />
-      <MainSection />
-      <About />
-      <Work />
-      <Project />
-      <Contact />
+      <div className="app">
+        <MainSection />
+        <About />
+        <Work />
+        <Project />
+        <Contact />
+      </div>
     </div>
   );
 }

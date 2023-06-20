@@ -1,0 +1,644 @@
+
+@font-face {
+    font-family: 'CallingCode';
+    src: url('./assets/CallingCode-Regular.otf') format('opentype'),
+        url('./assets/CallingCode-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('./assets/Fontspring-DEMO-neueradial-a-black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Neue-regular';
+    src: url('./assets/PublicSans-Regular.ttf') format('opentype');
+}
+
+body{
+    background-color: #0A192E;
+    color: white;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(10, 25, 48, 0.95);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.header.hidden {
+    top: -100px;
+}
+
+.header-logo{
+    margin: 30px 0 0 50px;
+}
+
+.header-logo-image{
+    width: 100px;
+    height: 80px;
+}
+
+.header-buttons{
+    margin-right: 50px;
+}
+
+.header-button{
+    font-family: 'CallingCode', sans-serif;
+    margin-left: 30px;
+    background: none;
+    border: none;
+    color: #CCD7F5;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-resume {
+    position: relative;
+    color: #65FFDA;
+    background-color: #0A1930;
+    border: 1px solid #65FFDA;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button-resume:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 2px 2px 0px #65FFDA;
+}
+
+.button-span{
+    color: #65FFDA;
+}
+
+.header-button:focus {
+    outline: none;
+}
+
+.header-button:hover {
+    color: #65FFDA;
+}
+
+.main{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 200px auto 0 auto;
+    padding: 0 150px;
+    height: 520px;
+}
+
+.main-hi{
+    color: #65FFDA;
+    font-family: 'CallingCode', sans-serif;
+    margin-bottom: 25px;
+}
+
+.main-name{
+    color: #CCD7F5;
+    font-family: 'Neue', sans-serif;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.main-title{
+    color: #8893AF;
+    font-family: 'Neue', sans-serif;
+    font-size: 58px;
+    margin-bottom: 25px;
+}
+
+.main-desc{
+    color: #8893AF;
+    font-family: 'Neue-regular', sans-serif;
+    font-size: 16px;
+    max-width: 530px;
+    line-height: 23px;
+}
+
+.desc-link{
+    position: relative;
+    text-decoration: none;
+    color: #65FFDA;
+}
+
+.desc-link::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: #65FFDA;
+    transition: width 0.3s;
+}
+
+.desc-link:hover::before {
+    width: 100%;
+}
+
+.main-button{
+    margin-top: 50px;
+    position: relative;
+    color: #65FFDA;
+    background-color: #0A1930;
+    border: 1px solid #65FFDA;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 2px 2px 0px #65FFDA;
+}
+
+.sidebar-left {
+    width: 40px;
+    height: 100px;
+    position: fixed;
+    bottom: 100px;
+    left: 40px;
+    right: auto;
+}
+
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-list::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #A8B3D0;
+}
+
+.sidebar-list-item {
+    list-style: none;
+    width: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar-list-img {
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+}
+
+.sidebar-list-img:hover {
+    stroke: #65FFDA;
+    transform: translate(0px, -3px);
+    transition: 0.3s;
+}
+
+.sidebar-right {
+    width: 40px;
+    height: 300px;
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    left: auto;
+}
+
+.sidebar-right-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-right-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #A8B3D0;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.3s;
+    transform: rotate(90deg);
+}
+
+.sidebar-right-link:hover {
+    color: #65FFDA;
+    transform: translate(0, -3px) rotate(90deg);
+    transition: 0.3s;
+}
+
+.link-line{
+    margin-top: 210px;
+}
+
+.link-line::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #A8B3D0;
+}
+
+.about-section{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 0 300px;
+    padding-top: 100px;
+    height: 620px;
+}
+
+.about-container{
+    display: flex;
+}
+
+.about-title{
+    display: flex;
+    align-items: center;
+    color: #65FFDA;
+    font-family: 'Neue', sans-serif;
+    font-size: 20px;
+    color: #CCD7F5;
+}
+
+.title-number{
+    color: #65FFDA;
+    font-family: 'CallingCode', sans-serif;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.about-title::after{
+    content: "";
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #233654;
+    margin-left: 20px;
+}
+
+.about-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    max-width: 470px;
+}
+
+.left-paragraph{
+    color: #8893AF;
+    font-family: 'Neue-regular', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+.left-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    color: #8893AF;
+    font-family: 'Neue-regular', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.left-list-li{
+    position: relative;
+    padding-left: 20px;
+}
+
+.left-list-li::before{
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #65FFDA;
+}
+
+.about-right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-left: 50px;
+    max-width: 450px;
+}
+
+.about-right::before{
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 14px; 
+    width: 300px; 
+    height: 300px; 
+    border: 2px solid #65FFDA;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+.right-img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background-color: #65FFDA;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+
+.right-img-overlay:hover {
+    opacity: 0;
+}
+
+.right-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 4px;
+}
+
+.work-section{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 0 300px;
+    padding: 100px 0px 0px 100px;
+    height: 620px;
+}
+
+.work-title{
+    display: flex;
+    align-items: center;
+    color: #65FFDA;
+    font-family: 'Neue', sans-serif;
+    font-size: 20px;
+    color: #CCD7F5;
+}
+
+.work-title::after{
+    content: "";
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #233654;
+    margin-left: 20px;
+}
+
+.work-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.work-left{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+.left-button{
+    width: 100%;
+    height: 42px;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    color: #102340;
+    transition: 0.3s;
+}
+
+.left-button:hover{
+    transition: 0.3s;
+    background-color: #102340;
+}
+
+.active{
+    color: #65FFDA;
+}
+
+.active::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #65FFDA;
+    left: 0px;
+}
+
+.work-right{
+    margin-left: 30px;
+    width: 450px;
+}
+
+.right-paragraph{
+    color: #8893AF;
+    font-family: 'Neue-regular', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.right-title{
+    color: #CCD7F5;
+    font-family: 'Neue', sans-serif;
+    font-size: 22px;
+}
+
+.title-link{
+    margin-left: 7px;
+    position: relative;
+    font-family: 'CallingCode', sans-serif;
+    text-decoration: none;
+    color: #65FFDA;
+}
+
+.title-link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #65FFDA;
+    transition: width 0.3s;
+}
+
+.title-link:hover::before {
+    width: 100%;
+}
+
+.right-subtitle{
+    color: #8893AF;
+    font-family: 'CallingCode', sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.right-list{
+    margin-top: 40px;
+    color: #8893AF;
+    font-family: 'Neue-regular', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+}
+
+.right-list-li{
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.right-list-li::before{
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #65FFDA;
+}
+
+.project-section{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 0 300px;
+    padding-top: 100px;
+    height: 620px;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.project-container-left{
+    position: relative;
+}
+
+.container-left-image{
+    width: 500px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.project-container-right{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+}
+
+.project-right-title{
+    font-family: 'CallingCode', sans-serif;
+    color: #65FFDA;
+    font-size: 15px;
+}
+
+.project-right-subtitle{
+    margin-top: 10px;
+    font-family: 'Neue', sans-serif;
+    color: #CCD7F5;
+    font-size: 22px;
+}
+
+.project-right-block{
+    margin-top: 20px;
+    margin-left: -30px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    z-index: 2;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    padding: 25px;
+    border-radius: 4px;
+    background-color: #102340;
+    color: #a8b2d1;
+}
+
+.project-right-desc{
+    font-family: 'Neue-regular', sans-serif;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.project-right-list{
+    margin-top: 30px;
+    display: flex;
+
+}
+
+.project-right-list-li{
+    margin-left: 18px;
+    color: #A8B3D0;
+    font-size: 15px;
+    font-family: 'CallingCode', sans-serif;
+}
+
+.contact-section{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 100px;
+    height: 500px;
+}
+
+.contact-title{
+    font-family: 'CallingCode', sans-serif;
+    color: #65FFDA;
+    font-size: 19px;
+}
+
+.contact-subtitle{
+    margin-top: 20px;
+    font-family: 'Neue', sans-serif;
+    color: #CCD7F5;
+    font-size: 45px;
+}
+
+.contact-desc{
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+    color: #8893AF;
+    font-family: 'Neue-regular', sans-serif;
+    line-height: 23px;
+    font-size: 17px;
+}
+
+.contact-button {
+    margin-top: 30px;
+    position: relative;
+    color: #65FFDA;
+    background-color: #0A1930;
+    border: 1px solid #65FFDA;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 2px 2px 0px #65FFDA;
+}
+
+.white{
+    color: #CCD7F5;
+}

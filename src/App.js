@@ -15,7 +15,7 @@ const App = () => {
       <Header />
       <SidebarLeft />
       <SidebarRight />
-      <div className="app">
+      <div className="padding100 padding50">
         <MainSection />
         <About />
         <Work />

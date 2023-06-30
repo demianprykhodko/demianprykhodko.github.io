@@ -2,7 +2,7 @@ import React from 'react';
 
 const SidebarLeft = () => {
 return (
-    <aside className="sidebar-left">
+    <aside className="sidebar-left hidden-on-medium">
         <ul className='sidebar-list'>
             <li className='sidebar-list-item'>
                 <a href="https://www.instagram.com/_m.u.l.a.t_/" target="_blank" rel="noopener noreferrer">

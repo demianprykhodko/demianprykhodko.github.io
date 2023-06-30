@@ -2,11 +2,11 @@ import React from 'react';
 
 const Work = () => {
 return (
-    <section className='work-section' id="work">
-        <h1 className='about-title'><span  className='title-number'>02. </span>Where I’ve Worked</h1>
-        <div className='work-container'>
-            <div className='work-left'>
-                <button className='left-button active'>Unity-Bars</button>
+    <section className='work-section container-fluid' id="work">
+        <h1 className='about-title d-flex align-items-center p-0'><span  className='title-number'>02. </span>Where I’ve Worked</h1>
+        <div className='work-container wmd'>
+            <div className='work-left wleft'>
+                <button className='left-button active brd'>Unity-Bars</button>
             </div>
             <div className='work-right'>
                 <h2 className='right-title'>Junior Software Engineer <a href='https://unity-bars.com/en' target="_blank" rel="noopener noreferrer" className='title-link'> <span>- Unity-Bars </span></a></h2>

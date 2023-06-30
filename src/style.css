@@ -243,20 +243,21 @@ body{
     color: #65FFDA;
     font-family: 'CallingCode', sans-serif;
     font-size: clamp(14px,5vw,16px);
+    margin: 0px 0px 30px 4px;
 }
 
 .main-name{
     color: #CCD7F5;
     font-family: 'Neue', sans-serif;
     font-size: clamp(40px, 8vw, 80px);
-    /* margin-bottom: 10px; */
+    margin: 0px;
 }
 
 .main-title{
     color: #8893AF;
     font-family: 'Neue', sans-serif;
     font-size: clamp(30px, 8vw, 70px);
-    /* margin-bottom: 25px; */
+    margin-top: 5px;
 }
 
 .main-desc{
@@ -265,6 +266,7 @@ body{
     font-size: 16px;
     max-width: 540px;
     line-height: 23px;
+    margin: 20px 0px 0px;
 }
 
 .desc-link{
@@ -631,9 +633,6 @@ body{
     grid-area: 1 / 6 / -1 / -1;
     position: relative;
     z-index: 1;
-    position: relative;
-    grid-column: 5 / -1;
-    grid-area: 1 / 1 / -1 / 7;
 }
 
 .container-left-image{
@@ -646,11 +645,11 @@ body{
 .project-container-right{
     text-align: right;
     grid-column: 1 / 8;
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
-    transition: var(--transition);
-    grid-area: 1 / 6 / -1 / -1;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
     position: relative;
     z-index: 1;
+    grid-column: 5 / -1;
+    grid-area: 1 / 1 / -1 / 7;
 }
 
 .project-right-title{
@@ -714,13 +713,15 @@ body{
     font-family: 'CallingCode', sans-serif;
     color: #65FFDA;
     font-size: 19px;
+    margin-bottom: 20px;
 }
 
 .contact-subtitle{
-    margin-top: 20px;
     font-family: 'Neue', sans-serif;
     color: #CCD7F5;
     font-size: 45px;
+    line-height: 1.1;
+    margin: 0px 0px 10px;
 }
 
 .contact-desc{
@@ -733,15 +734,17 @@ body{
 }
 
 .contact-button {
-    margin-top: 30px;
-    position: relative;
     color: #65FFDA;
-    background-color: #0A1930;
+    background-color: transparent;
     border: 1px solid #65FFDA;
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    font-size: 14px;
     font-family: 'CallingCode', sans-serif;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: 0.3s;
+    line-height: 1;
+    text-decoration: none;
+    margin-top: 50px;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 
 .contact-button:hover {

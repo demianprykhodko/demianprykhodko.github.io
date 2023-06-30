@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9d33e40b.css",
-    "main.js": "/portfolio/static/js/main.3d6fcb70.js",
+    "main.css": "/portfolio/static/css/main.b79b17e1.css",
+    "main.js": "/portfolio/static/js/main.8d6846c0.js",
     "static/media/routeplanner.png": "/portfolio/static/media/routeplanner.f584cbcaaa63c38ad76b.png",
     "static/media/CV2023.pdf": "/portfolio/static/media/CV2023.31285654d2e96fd39bce.pdf",
     "static/media/CallingCode-Regular.ttf": "/portfolio/static/media/CallingCode-Regular.0bbb9410d698987fb4c5.ttf",
@@ -11,11 +11,11 @@
     "static/media/photo.jpeg": "/portfolio/static/media/photo.5c802c33a0a8fe13989c.jpeg",
     "static/media/Dp..svg": "/portfolio/static/media/Dp..724e15174846156ce1c4a6d77b61a9f8.svg",
     "index.html": "/portfolio/index.html",
-    "main.9d33e40b.css.map": "/portfolio/static/css/main.9d33e40b.css.map",
-    "main.3d6fcb70.js.map": "/portfolio/static/js/main.3d6fcb70.js.map"
+    "main.b79b17e1.css.map": "/portfolio/static/css/main.b79b17e1.css.map",
+    "main.8d6846c0.js.map": "/portfolio/static/js/main.8d6846c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d33e40b.css",
-    "static/js/main.3d6fcb70.js"
+    "static/css/main.b79b17e1.css",
+    "static/js/main.8d6846c0.js"
   ]
 }

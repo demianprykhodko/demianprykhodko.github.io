@@ -275,6 +275,10 @@ body{
     color: #65FFDA;
 }
 
+.desc-link:hover{
+    color: #65FFDA;
+}
+
 .desc-link::before {
     content: '';
     position: absolute;
@@ -408,6 +412,12 @@ body{
     font-family: 'Neue', sans-serif;
     font-size: clamp(13px,5vw,32px);
     color: #CCD7F5;
+    -webkit-box-align: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 1.1;
 }
 
 .title-number{
@@ -420,10 +430,12 @@ body{
 .about-title::after{
     content: "";
     display: block;
-    width: 180px;
+    position: relative;
+    top: 0;
+    width: 300px;
     height: 1px;
-    background-color: #233654;
     margin-left: 20px;
+    background-color: #233554;
 }
 
 .about-left{
@@ -559,6 +571,10 @@ body{
     position: relative;
     font-family: 'CallingCode', sans-serif;
     text-decoration: none;
+    color: #65FFDA;
+}
+
+.title-link:hover{
     color: #65FFDA;
 }
 
